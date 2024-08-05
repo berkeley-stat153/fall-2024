@@ -11,9 +11,9 @@ format:
 
 ||  |
 |---------|-----|
-| Homework 1  | [Rmd](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework1/homework1.Rmd), [html](homeworks/homework1/homework1.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework1) |
-| Homework 2  | [Rmd](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework2/homework2.Rmd), [html](homeworks/homework2/homework2.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework2) |
-| Homework 3  | [Rmd](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework3/homework3.Rmd), [html](homeworks/homework3/homework3.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework3) |
-| Homework 4  | [Rmd](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework4/homework4.Rmd), [html](homeworks/homework4/homework4.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/homeworks/homework4) |
+| Homework 1  | [Rmd](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework1/homework1.Rmd), [html](homeworks/homework1/homework1.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework1) |
+| Homework 2  | [Rmd](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework2/homework2.Rmd), [html](homeworks/homework2/homework2.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework2) |
+| Homework 3  | [Rmd](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework3/homework3.Rmd), [html](homeworks/homework3/homework3.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework3) |
+| Homework 4  | [Rmd](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework4/homework4.Rmd), [html](homeworks/homework4/homework4.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/homeworks/homework4) |
 
 Homework 5 has been canceled; see bCourses for new Homework 5.

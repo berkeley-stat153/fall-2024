@@ -1,6 +1,6 @@
 ---
 title: "Statistics 153: Introduction to Time Series"
-subtitle: "UC Berkeley, Fall 2023"
+subtitle: "UC Berkeley, Fall 2024"
 listing:
   - id: buttons
     template: assets/buttons.ejs
@@ -30,7 +30,7 @@ format:
 Handy links:
 
 - [Syllabus](syllabus)
-- [GitHub repo](https://www.github.com/ryantibs/timeseries-f23) (source files for lectures and homeworks)
+- [GitHub repo](https://www.github.com/ryantibs/timeseries-f24) (source files for lectures and homeworks)
 - [Ed Discussion](https://edstem.org/us/courses/42044) (for class discussions and announcements)
 - [bCourses](https://bcourses.berkeley.edu/courses/1527046) (for grade-keeping and homework solutions)
 

@@ -1,6 +1,6 @@
 ---
 title: 'Homework 4: [YOUR NAME HERE]'
-subtitle: 'Introduction to Time Series, Fall 2023'
+subtitle: 'Introduction to Time Series, Fall 2024'
 date: 'Due Friday November 3 at 9pm'
 output:
   pdf_document

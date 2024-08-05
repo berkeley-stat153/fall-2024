@@ -6,7 +6,7 @@ render:
   - "!*.qmd"
 
 website:
-  site-url: https://stat153.berkeley.edu/fall-2023/
+  site-url: https://stat153.berkeley.edu/fall-2024/
   google-analytics: G-ZLC7WVGHGY
           
 

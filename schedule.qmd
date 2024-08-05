@@ -12,18 +12,18 @@ format:
 
 |    |       |      |    |
 |----|-------|------|----|
-| Week 1: Aug 23 - Aug 25 |	Characteristics of time series 	| [pdf](lectures/characteristics/characteristics.pdf), [html](lectures/characteristics/characteristics.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/characteristics) | |	
-| Week 2: Aug 28 - Sep 1  |	Measures of dependence 	| [pdf](lectures/dependence/dependence.pdf), [html](lectures/dependence/dependence.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/dependence) 	| |
-| Week 3: Sep 6 - Sep 8  |	Regression and prediction 	| [pdf](lectures/regression/regression.pdf), [html](lectures/regression/regression.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/regression) |	Hw 1 due Thur Sep 7 |
+| Week 1: Aug 23 - Aug 25 |	Characteristics of time series 	| [pdf](lectures/characteristics/characteristics.pdf), [html](lectures/characteristics/characteristics.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/characteristics) | |	
+| Week 2: Aug 28 - Sep 1  |	Measures of dependence 	| [pdf](lectures/dependence/dependence.pdf), [html](lectures/dependence/dependence.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/dependence) 	| |
+| Week 3: Sep 6 - Sep 8  |	Regression and prediction 	| [pdf](lectures/regression/regression.pdf), [html](lectures/regression/regression.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/regression) |	Hw 1 due Thur Sep 7 |
 | Week 4: Sep 11 - Sep 15 |	Regression and prediction 	| " | | 	
-| Week 5: Sep 18 - Sep 22 |	Regularization and smoothing 	| [pdf](lectures/smoothing/smoothing.pdf), [html](lectures/smoothing/smoothing.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/smoothing) |	Hw 2 due Thur Sep 21 |
+| Week 5: Sep 18 - Sep 22 |	Regularization and smoothing 	| [pdf](lectures/smoothing/smoothing.pdf), [html](lectures/smoothing/smoothing.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/smoothing) |	Hw 2 due Thur Sep 21 |
 | Week 6: Sep 25 - Sep 29 |	Regularization and smoothing 	| " | | 	
-| Week 7: Oct 2 - Oct 6 |	Spectral analysis 	| [pdf](lectures/spectral/spectral.pdf), [html](lectures/spectral/spectral.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/spectral) |	Hw 3 due Fri Oct 6 |
+| Week 7: Oct 2 - Oct 6 |	Spectral analysis 	| [pdf](lectures/spectral/spectral.pdf), [html](lectures/spectral/spectral.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/spectral) |	Hw 3 due Fri Oct 6 |
 | Week 8: Oct 9 - Oct 13 |	Spectral analysis 	| " | | 	
-| Week 9: Oct 16 - Oct 20 |	ARIMA models 	| [pdf](lectures/arima/arima.pdf), [html](lectures/arima/arima.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/arima) |	Midterm Fri Oct 20 |
+| Week 9: Oct 16 - Oct 20 |	ARIMA models 	| [pdf](lectures/arima/arima.pdf), [html](lectures/arima/arima.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/arima) |	Midterm Fri Oct 20 |
 | Week 10: Oct 23 - Oct 27 |	ARIMA models 	| " | | 	
 | Week 11: Oct 30 - Nov 3 |	ARIMA models 	| " | | 	
-| Week 12: Nov 6 - Nov 8 |	ETS models 	| [pdf](lectures/ets/ets.pdf), [html](lectures/ets/ets.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/ets) |	Hw 4 due Mon Nov 6 |
+| Week 12: Nov 6 - Nov 8 |	ETS models 	| [pdf](lectures/ets/ets.pdf), [html](lectures/ets/ets.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/ets) |	Hw 4 due Mon Nov 6 |
 | Week 13: Nov 13 - Nov 17 |	ETS models 	| " | | 	
 | Week 14: Nov 20  |	[Nothing! Enjoy Thanksgiving] 	| | |	
-| Week 15: Nov 27 - Dec 1 | 	Advanced topics 	| [pdf](lectures/advanced/advanced.pdf), [html](lectures/advanced/advanced.html), [source](https://github.com/berkeley-stat153/fall-2023/tree/main/lectures/advanced) |	Hw 5 due Fri Dec 1, Final Weds Dec 13 |
+| Week 15: Nov 27 - Dec 1 | 	Advanced topics 	| [pdf](lectures/advanced/advanced.pdf), [html](lectures/advanced/advanced.html), [source](https://github.com/berkeley-stat153/fall-2024/tree/main/lectures/advanced) |	Hw 5 due Fri Dec 1, Final Weds Dec 13 |
