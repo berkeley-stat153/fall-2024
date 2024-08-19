@@ -1,0 +1,29 @@
+.label {
+    border-radius: 9px;
+    padding: 5px;
+    color: white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+table {
+    border: 2px solid;
+}
+
+button > a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.border {
+  color:#069;
+  font-weight: bold;
+}
+
