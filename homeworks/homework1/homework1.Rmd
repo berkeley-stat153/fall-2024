@@ -12,7 +12,9 @@ knitr::opts_chunk$set(cache = TRUE, autodep = TRUE, cache.comments = TRUE)
 
 The total number of points possible for this homework is 42. The number of 
 points for each question is written below, and questions marked as "bonus" are 
-optional. Submit the **knitted html file** from this Rmd to Gradescope. 
+optional. Points awarded for bonus problems can be used to earn back points that
+you may have lost on other parts of this homework but will not put you above full 
+credit. Submit the **knitted html file** from this Rmd to Gradescope. 
 
 If you collaborated with anybody for this homework, put their names here:
 
@@ -50,6 +52,8 @@ where (say) $w_t \sim N(0,\sigma^2)$ for $t = 1,2,3,\dots$. Recall from lecture
 that this is not stationary. Prove that $\rho(t-1,t) = \sqrt{\frac{t-1}{t}}$. 
 What does this approach as $t \to \infty$ and what is the interpretation of this
 result?
+
+SOLUTION GOES HERE
 
 5. (3 pts)
 Suppose that both $\delta$ and $\sigma^2$ are unknown. Devise a test statistic 
@@ -112,7 +116,7 @@ SOLUTION GOES HERE
 10. (3 pts)
 Simulate the processes from Q8 (with $\mu = 0$) and Q9 (with $\mu \not= 0$), 
 yielding two time series of length 200, and plot the results. Compute the sample 
-mean and sample variance for each one (to be clear, this just a sample mean of 
+mean and sample variance for each one (to be clear, this is just a sample mean of 
 all data, over all time, and similarly for the variance), and check that these 
 are close to the population mean and variance from Q8 and Q9. Also compute and 
 plot the sample auto-correlation function using `acf()`, and check again that it 
@@ -127,18 +131,20 @@ Give an example of a weakly stationary process that is not strongly stationary.
 
 SOLUTION GOES HERE
 
-11. (Bonus)
+12. (Bonus)
 A function $\kappa$ is said to be *positive semidefinite* (PSD) provided that
 \[
 \sum_{i,j=1}^n a_i a_j \kappa(t_i - t_j) \geq 0, \quad \text{for all $n \geq 1$, 
 all $a_1,\dots,a_n$, and all $t_1,\dots,t_n$}.
 \]
-Prove that is $x_t$, $t = 1,2,3,\dots$ is stationary, and $\gamma_x(h)$ is its
+Prove that if $x_t$, $t = 1,2,3,\dots$ is stationary, and $\gamma_x(h)$ is its
 auto-covariance function (as a function of lag $h$), then $\gamma_x$ is PSD.
 You may use whatever elementary probability and/or linear algebra facts that you
 would like, as long as you state clearly what you are using.
 
-12. (Bonus)
+SOLUTION GOES HERE
+
+13. (Bonus)
 Prove moreover that the sample auto-covariance function $\hat\gamma_x$ defined 
 in lecture is also PSD.
 

@@ -357,8 +357,10 @@ display: none;
 
 <p>The total number of points possible for this homework is 42. The
 number of points for each question is written below, and questions
-marked as “bonus” are optional. Submit the <strong>knitted html
-file</strong> from this Rmd to Gradescope.</p>
+marked as “bonus” are optional. Points awarded for bonus problems can be
+used to earn back points that you may have lost on other parts of this
+homework but will not put you above full credit. Submit the
+<strong>knitted html file</strong> from this Rmd to Gradescope.</p>
 <p>If you collaborated with anybody for this homework, put their names
 here:</p>
 <div id="correlation-and-independence" class="section level1">
@@ -387,7 +389,7 @@ this case.</li>
 <div id="random-walks" class="section level1">
 <h1>Random walks</h1>
 <ol start="4" style="list-style-type: decimal">
-<li><p>(2 pts) Let <span class="math inline">\(x_t\)</span>, <span class="math inline">\(t = 1,2,3,\dots\)</span> be a random walk with
+<li>(2 pts) Let <span class="math inline">\(x_t\)</span>, <span class="math inline">\(t = 1,2,3,\dots\)</span> be a random walk with
 drift: <span class="math display">\[
 x_t = \delta + x_{t-1} + w_t,
 \]</span> where (say) <span class="math inline">\(w_t \sim
@@ -395,7 +397,10 @@ N(0,\sigma^2)\)</span> for <span class="math inline">\(t =
 1,2,3,\dots\)</span>. Recall from lecture that this is not stationary.
 Prove that <span class="math inline">\(\rho(t-1,t) =
 \sqrt{\frac{t-1}{t}}\)</span>. What does this approach as <span class="math inline">\(t \to \infty\)</span> and what is the
-interpretation of this result?</p></li>
+interpretation of this result?</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="5" style="list-style-type: decimal">
 <li><p>(3 pts) Suppose that both <span class="math inline">\(\delta\)</span> and <span class="math inline">\(\sigma^2\)</span> are unknown. Devise a test
 statistic for the null hypothesis that <span class="math inline">\(\delta = 0\)</span> in the random walk model from
 Q4. This should be based on a standard test that you know (have learned
@@ -450,12 +455,12 @@ for <span class="math inline">\(\mu \not= 0\)</span>. Is <span class="math inlin
 <ol start="10" style="list-style-type: decimal">
 <li>(3 pts) Simulate the processes from Q8 (with <span class="math inline">\(\mu = 0\)</span>) and Q9 (with <span class="math inline">\(\mu \not= 0\)</span>), yielding two time series of
 length 200, and plot the results. Compute the sample mean and sample
-variance for each one (to be clear, this just a sample mean of all data,
-over all time, and similarly for the variance), and check that these are
-close to the population mean and variance from Q8 and Q9. Also compute
-and plot the sample auto-correlation function using <code>acf()</code>,
-and check again that it agrees with the population auto-correlation
-function from Q8 and Q9.</li>
+variance for each one (to be clear, this is just a sample mean of all
+data, over all time, and similarly for the variance), and check that
+these are close to the population mean and variance from Q8 and Q9. Also
+compute and plot the sample auto-correlation function using
+<code>acf()</code>, and check again that it agrees with the population
+auto-correlation function from Q8 and Q9.</li>
 </ol>
 <pre class="r"><code># CODE GOES HERE</code></pre>
 <ol start="11" style="list-style-type: decimal">
@@ -463,20 +468,23 @@ function from Q8 and Q9.</li>
 strongly stationary.</li>
 </ol>
 <p>SOLUTION GOES HERE</p>
-<ol start="11" style="list-style-type: decimal">
-<li><p>(Bonus) A function <span class="math inline">\(\kappa\)</span> is
+<ol start="12" style="list-style-type: decimal">
+<li>(Bonus) A function <span class="math inline">\(\kappa\)</span> is
 said to be <em>positive semidefinite</em> (PSD) provided that <span class="math display">\[
 \sum_{i,j=1}^n a_i a_j \kappa(t_i - t_j) \geq 0, \quad \text{for all $n
 \geq 1$,
 all $a_1,\dots,a_n$, and all $t_1,\dots,t_n$}.
-\]</span> Prove that is <span class="math inline">\(x_t\)</span>, <span class="math inline">\(t = 1,2,3,\dots\)</span> is stationary, and <span class="math inline">\(\gamma_x(h)\)</span> is its auto-covariance
+\]</span> Prove that if <span class="math inline">\(x_t\)</span>, <span class="math inline">\(t = 1,2,3,\dots\)</span> is stationary, and <span class="math inline">\(\gamma_x(h)\)</span> is its auto-covariance
 function (as a function of lag <span class="math inline">\(h\)</span>),
 then <span class="math inline">\(\gamma_x\)</span> is PSD. You may use
 whatever elementary probability and/or linear algebra facts that you
-would like, as long as you state clearly what you are using.</p></li>
-<li><p>(Bonus) Prove moreover that the sample auto-covariance function
+would like, as long as you state clearly what you are using.</li>
+</ol>
+<p>SOLUTION GOES HERE</p>
+<ol start="13" style="list-style-type: decimal">
+<li>(Bonus) Prove moreover that the sample auto-covariance function
 <span class="math inline">\(\hat\gamma_x\)</span> defined in lecture is
-also PSD.</p></li>
+also PSD.</li>
 </ol>
 <p>SOLUTION GOES HERE</p>
 </div>
@@ -516,10 +524,10 @@ stationary but not strongly jointly stationary.</li>
 <li>(3 pts) If <span class="math inline">\(x_t\)</span>, <span class="math inline">\(t = 1,2,3,\dots\)</span> and <span class="math inline">\(y_t\)</span>, <span class="math inline">\(t =
 1,2,3,\dots\)</span> form a <em>joint Gaussian process</em>, which means
 that any collection <span class="math inline">\((x_{s_1}, x_{s_2},
-\dots, x_{s_k},
-y_{t_1}, y_{t_2}, \dots, y_{t_\ell})\)</span> of variates along the
-series has a multivariate Gaussian distribution, then prove that weak
-joint stationarity implies strong joint stationarity.</li>
+\dots, x_{s_k}, y_{t_1}, y_{t_2}, \dots, y_{t_\ell})\)</span> of
+variates along the series has a multivariate Gaussian distribution, then
+prove that weak joint stationarity implies strong joint
+stationarity.</li>
 </ol>
 <p>SOLUTION GOES HERE</p>
 <ol start="16" style="list-style-type: decimal">
