@@ -3,7 +3,7 @@ title: 'Homework 1: [YOUR NAME HERE]'
 subtitle: 'Introduction to Time Series, Fall 2024'
 date: 'Due Friday September 13'
 output:
-  html_document
+  pdf_document
 ---
 
 ```{r, include=FALSE}
@@ -14,7 +14,7 @@ The total number of points possible for this homework is 42. The number of
 points for each question is written below, and questions marked as "bonus" are 
 optional (points awarded for bonus problems can be used to earn back points that 
 you may have lost on other parts of this homework but will not put you above 
-full credit). Submit the **knitted html file** from this Rmd to Gradescope. 
+full credit). Submit the **knitted pdf file** from this Rmd to Gradescope. 
 
 If you collaborated with anybody for this homework, put their names here:
 
