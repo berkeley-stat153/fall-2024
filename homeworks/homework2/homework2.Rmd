@@ -155,7 +155,7 @@ starting with those `yhat2` from the second model, and changing the multiplier
 in the exponent for the last 25 predictions from `0.18` to `0.22`. As in the
 last question, plot `yhat2` and `yhat3` as colored lines overlaid on top of the
 data and clearly mark them with a legend. Also, compute and compare the MAE and
-MSE of the third model versus the second. It should be worse according to both
+MAPE of the third model versus the second. It should be worse according to both
 metrics. Finally, for each of `yhat2` and `yhat3`, compute what is known as mean 
 absolute relative error (MARE):
 \[
