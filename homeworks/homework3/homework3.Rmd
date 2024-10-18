@@ -10,6 +10,8 @@ output:
 knitr::opts_chunk$set(cache = TRUE, autodep = TRUE, cache.comments = TRUE)
 ```
 
+\raggedright
+
 The total number of points possible for this homework is 38. The number of 
 points for each question is written below, and questions marked as "bonus" are 
 optional (points awarded for bonus problems can be used to earn back points that 
@@ -29,8 +31,6 @@ in the regression of $y$ on $X$, then any vector of the form
 \]
 is also a solution.
 
-SOLUTION GOES HERE
-
 2. (6 pts)
 With $X, y$ as in Q1, suppose that $\tilde\beta$ is a least squares solution 
 with $\tilde\beta_j > 0$, and suppose that $\mathrm{null}(X) \not\perp e_j$, 
@@ -39,8 +39,6 @@ vector with all 0s except for a 1 in the $j^{\text{th}}$ component), and recall
 we write $S \perp v$ for a set $S$ and vector $v$ provided $u^T v = 0$ for all
 $u \in S$. Prove that there exists another least squares solution $\hat\beta$ 
 such that $\hat\beta_j < 0$.
-
-SOLUTION GOES HERE
 
 # Ridge and lasso
 
@@ -68,17 +66,9 @@ regression lecture (weeks 3-4: "Regression and prediction") for the split-sample
 validation. *Note carefully that the lecture code includes lag 0, and here we do
 not, so that we can make ex-ante 4-week ahead forecasts!*
 
-```{r}
-# CODE GOES HERE
-```
-
 4. (1 pts)
 Which lagged features were present in the MAE-optimal lasso model, selected by
 split-sample validation, in Q3?
-
-```{r}
-# CODE GOES HERE
-```
 
 5. (8 pts)
 Repeat Q3, except implement time series cross-validation instead of split-sample 
@@ -108,10 +98,6 @@ the selected value of $\lambda$ on the plot.
 cross-validation (or the code you wrote in Homework 2 to implement time series
 cross-validation).
 
-```{r}
-# CODE GOES HERE
-```
-
 6. (Bonus) 
 Report which lagged features were most frequently selected by the lasso. Because
 the lasso models will be refit at each time point (in the second half of the
@@ -119,10 +105,6 @@ data set), you will have to additionally store the lasso solutions along your
 time series CV pass. Then, look back at the solutions that correspond to the 
 MAE-optimal $\lambda$ value, and choose some way of summarizing which of its 
 components were consistently large in magnitude over time.
-
-```{r}
-# CODE GOES HERE
-```
 
 # HP filter
 
@@ -147,18 +129,10 @@ as a curve. Overlay the curves for all three rows on the same plot, each in a
 different color. What do these curves look like to you? Use the plot to argue 
 that the HP filter acts like a kernel smoother.
 
-```{r}
-# CODE GOES HERE
-```
-
 8. (Bonus) 
 Do a literature search to find theory on the *asymptotically equivalent kernel* 
 for the HP filter. This should have a closed-form. Plot this and comment on 
 whether or not your empirical results adhere to what is known asymptotically.
-
-```{r}
-# CODE GOES HERE
-```
 
 # Trend filter
 
@@ -230,14 +204,8 @@ for $t = 1,2,3,\dots$. Prove that this process is stationary, and show that its
 auto-covariance function is of the form given in lecture (weeks 7-8, "Spectral 
 analysis and filtering").
 
-SOLUTION GOES HERE
-
 11. (2 pts)
 Construct a small empirical example to verify the auto-covariance formula you 
 derived in Q10. That is, generate a process with at least $p=2$ components. 
 compute its auto-correlation function with `acf()`, and compare to the analytic
 formula you derived.
-
-```{r}
-# CODE GOES HERE
-```

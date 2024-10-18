@@ -10,6 +10,8 @@ output:
 knitr::opts_chunk$set(cache = TRUE, autodep = TRUE, cache.comments = TRUE)
 ```
 
+\raggedright
+
 The total number of points possible for this homework is 42. The number of 
 points for each question is written below, and questions marked as "bonus" are 
 optional (points awarded for bonus problems can be used to earn back points that 
@@ -26,20 +28,14 @@ independent. You must explicitly prove that they are uncorrelated but not
 independent (for the latter, you may invoke any property that you know is
 equivalent to independence).
 
-SOLUTION GOES HERE
-
 2. (2 pts)
 If $(X,Y)$ has a multivariate Gaussian distribution, and $X,Y$ are uncorrelated: 
 $\mathrm{Cov}(X,Y) = 0$, then show that $X,Y$ are independent.
-
-SOLUTION GOES HERE
 
 3. (3 pts)
 Give an example to show that two random variables $X,Y$ can be marginally 
 Gaussian (meaning, $X$ is Gaussian, and $Y$ is Gaussian) and uncorrelated but
 *not* independent. Hint: $(X,Y)$ cannot be multivariate Gaussian in this case.
-
-SOLUTION GOES HERE
 
 # Random walks
 
@@ -52,8 +48,6 @@ where (say) $w_t \sim N(0,\sigma^2)$ for $t = 1,2,3,\dots$. Recall from lecture
 that this is not stationary. Prove that $\rho(t-1,t) = \sqrt{\frac{t-1}{t}}$. 
 What does this approach as $t \to \infty$ and what is the interpretation of this
 result?
-
-SOLUTION GOES HERE
 
 5. (3 pts)
 Suppose that both $\delta$ and $\sigma^2$ are unknown. Devise a test statistic 
@@ -68,16 +62,10 @@ implemented as a function in base R). Hint: consider taking differences along
 the sequence ... after that, what you want sounds like "c-test", or "p-test",
 or "$\phi$-test", or ...
 
-SOLUTION GOES HERE
-
 6. (2 pts)
 Simulate a random walk of length 200 *without* drift, i.e., $\delta = 0$, and 
 compute the test statistic you devised in Q5 and report its value. Then repeat,
 but using a large nonzero value $\delta$.
-
-```{r}
-# CODE GOES HERE
-```
 
 7. (4 pts)
 Simulate 50 random walks each of length 200, with nonzero drift, and plot them 
@@ -90,10 +78,6 @@ deviation: $\hat\mu_t \pm \hat\sigma_t$, as dark dotted lines on the same plot.
 Describe what you see (you should see that both the mean and variance increase
 over time).
 
-```{r}
-# CODE GOES HERE
-```
-
 # Stationarity
 
 8. (3 pts)
@@ -105,13 +89,9 @@ x_t = w_t w_{t-1},
 where each $w_t \sim N(0, \sigma^2)$, independently. Is $x_t$, $t = 1,2,3,\dots$ 
 stationary?
 
-SOLUTION GOES HERE
-
 9. (3 pts)
 Repeat the same calculations in Q8, but where each $w_t \sim N(\mu, \sigma^2)$,
 independently, for $\mu \not= 0$. Is $x_t$, $t = 1,2,3,\dots$ stationary?
-
-SOLUTION GOES HERE
 
 10. (3 pts)
 Simulate the processes from Q8 (with $\mu = 0$) and Q9 (with $\mu \not= 0$), 
@@ -122,14 +102,8 @@ are close to the population mean and variance from Q8 and Q9. Also compute and
 plot the sample auto-correlation function using `acf()`, and check again that it 
 agrees with the population auto-correlation function from Q8 and Q9.
 
-```{r}
-# CODE GOES HERE
-```
-
 11. (2 pts)
 Give an example of a weakly stationary process that is not strongly stationary.
-
-SOLUTION GOES HERE
 
 12. (Bonus)
 A function $\kappa$ is said to be *positive semidefinite* (PSD) provided that
@@ -142,13 +116,9 @@ auto-covariance function (as a function of lag $h$), then $\gamma_x$ is PSD.
 You may use whatever elementary probability and/or linear algebra facts that you
 would like, as long as you state clearly what you are using.
 
-SOLUTION GOES HERE
-
 13. (Bonus)
 Prove moreover that the sample auto-covariance function $\hat\gamma_x$ defined 
 in lecture is also PSD.
-
-SOLUTION GOES HERE
 
 # Joint stationarity
 \def\eqd{\overset{d}{=}}
@@ -181,8 +151,6 @@ $\gamma_{xy}(h)$.
 Give an example of two time series that are weakly jointly stationary but not 
 strongly jointly stationary. 
 
-SOLUTION GOES HERE
-
 15. (3 pts)
 If $x_t$, $t = 1,2,3,\dots$ and $y_t$, $t = 1,2,3,\dots$ form a *joint Gaussian
 process*, which means that any collection $(x_{s_1}, x_{s_2}, \dots, x_{s_k}, 
@@ -190,16 +158,12 @@ y_{t_1}, y_{t_2}, \dots, y_{t_\ell})$ of variates along the series has a
 multivariate Gaussian distribution, then prove that weak joint stationarity 
 implies strong joint stationarity.
 
-SOLUTION GOES HERE
-
 16. (3 pts)
 Write down explicit formulas that shows how to estimate the cross-covariance 
 and cross-correlation function of two finite time series $x_t$, $t = 1,\dots,n$ 
 and $y_t$, $t = 1,\dots,n$, under the assumption of joint stationarity. Hint: 
 these should be entirely analogous to the *sample auto-covariance and sample 
 auto-correlation functions* that we covered in lecture.
-
-SOLUTION GOES HERE
 
 17. (4 pts) 
 Following the code used in the lecture notes from week 2 ("Measures of 
@@ -214,7 +178,3 @@ on the same plot, for each state (the lecture code provides a way to do this so
 that they are scaled dynamically to attain the same min and max, and hence look 
 nice when plotted together). Comment on whether the estimated cross-correlation
 patterns agree with what you see visually between the case and death signals.
-
-```{r}
-# CODE GOES HERE
-```
