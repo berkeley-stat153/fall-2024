@@ -3021,7 +3021,8 @@ oh_no = car |&gt;
         model2 = ARIMA(Exports ~ 0 + pdq(2,0,0) + PDQ(0,0,0)))
 
 # Thought you clearly specified as AR(2) model in the first line, right? WRONG. 
-# Take a look. You&#39;ll see it decided to include a constant ...
+# Take a look. You&#39;ll see it decided to optimize over the intercept, difference
+# order, and MA order ...
 oh_no |&gt; select(model1) |&gt; report()</code></pre>
 <pre><code>## Series: Exports 
 ## Model: ARIMA(2,1,2) 
