@@ -117,12 +117,12 @@ cross-validation. Take a look at what it does with this example:
 library(tidyverse)
 library(fpp3)
 
-dat = tsibble(date = as.Date("2023-10-01") + 0:9, 
+dat = tsibble(date = as.Date("2023-10-01") + 0:9,  
               value = 1:10 + rnorm(10, sd = 0.25),
               index = date)
 dat
 
-dat_stretched = dat|> stretch_tsibble(.init = 3) 
+dat_stretched = dat |> stretch_tsibble(.init = 3) 
 dat_stretched
 ```
 
