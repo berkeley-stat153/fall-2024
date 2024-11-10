@@ -125,7 +125,7 @@ target date July 4, 2020, the point forecast is 5169.654 and the death count is
 per horizon, report the results. 
 
 2. (2 pts)
-Using the same joined data set from Q1, compute the coverage of \80% prediction 
+Using the same joined data set from Q1, compute the coverage of 80\% prediction 
 intervals, per horizon, and report the results. 
 
 # Evaluating the baseline model's MAE
@@ -141,7 +141,7 @@ the latest observation.) After you've done this, compute the MAE of the baseline
 forecasts, per horizon, and report the results.
 
 4. (Bonus) 
-Develop a method to form an \80% prediction interval around the baseline model's
+Develop a method to form an 80\% prediction interval around the baseline model's
 point forecasts. This should still be an ex-ante prediction in the sense that it 
 should not be using data after the forecast date. Once you've done this, compute 
 the coverage of these prediction intervals, per horizon, and report the results.
@@ -160,9 +160,9 @@ package. Each model should be fit only using the data up through June 6, 2020.
 (This is also therefore the forecast date.) These models should be fit *with* 
 the inclusion of a constant but *without* any seasonality terms (specify the 
 formula carefully to ensure this). After fitting these models, use these to make
-1-4 week ahead forecasts and plot them with `autoplot()`. Hint: before calling
-`fable::model()` you'll have to convert `cases_deaths `to a `tsibble` object,
-with `index = date`.
+1-4 week ahead forecasts and plot them (along with the true death counts through 
+June 6, 2020) with `autoplot()`. Hint: before calling `fable::model()` you'll 
+have to convert `cases_deaths `to a `tsibble` object, with `index = date`.
 
 7. (4 pts) 
 For the two models from Q6, check that their 1 week ahead point forecasts match 
@@ -175,7 +175,7 @@ Implement time series cross-validation (CV) for these ARIMA models, ARIMA(1,1,0)
 and ARIMA(2,1,0), each with constants (and no seasonality). The simplest way to 
 do this will be write a loop (to refresh yourself, look back at the lecture code
 from weeks 3-4, "Linear regression and prediction", or from the homeworks after
-that). As you saw in the last homework, the `fable` package provides it own way
+that). As you saw in the last homework, the `fable` package provides its own way
 to run time series CV, but it will use up too much memory (and be too cumbersome 
 for the computations that involve exogenous features, later). 
 
@@ -218,7 +218,7 @@ horizon, all on the same plot. According to MAE, your ARIMA models should be
 better than the baseline, but notably worse than the ensemble.
 
 10. (Bonus)
-Do the same as in Q9, but substituting MAE with coverage of the \80% prediction
+Do the same as in Q9, but substituting MAE with coverage of the 80\% prediction
 intervals.
 
 # ETS models
@@ -226,26 +226,26 @@ intervals.
 11. (8 pts) 
 Fit two ETS models, using `ETS()` from the `fable` package: Holt's linear trend 
 and damped linear trend. Each of these models should have additive errors, and 
-no seasonality. Implement time series CV in order to evaluate them, just you did
-in Q8; you should be appending the forecast from these ETS models to `fable_fc`.
+no seasonality. Implement time series CV to evaluate them, just as you did in 
+Q8; you should be appending the forecast from these ETS models to `fable_fc`.
 Then, as in Q9, plot their MAE curves as a function of horizon, and overlay the
 curves from all models considered thus far. Discuss what you find. 
 
 12. (Bonus)
-Compute the coverage of \80% prediction intervals from each of the ETS models, 
+Compute the coverage of 80\% prediction intervals from each of the ETS models, 
 per horizon, and plot alongside the coverage curves from all models considered
 thus far.
 
 # Exogenous features
 
 13. (8 pts)
-As mentioned in the intro to this homewwork, exogenous features can play a huge
+As mentioned in the intro to this homework, exogenous features can play a huge
 role developing useful forecasts. Fortunately, here you already have a fairly
 obvious candidate for such an exogenous feature: reported Covid-19 case counts.
 Both intuitively and quantitatively (recall the cross-correlation plots that we
 computed near the start of the course), we know that this is a leading indicator
 of Covid-19 deaths. In order to be able to make up to 4 week ahead forecasts,
-we'll use 4-week-lagged Covid-19 cases as exogenous feature, to add to our AIRMA
+we'll use 4-week-lagged Covid-19 cases as exogenous feature, to add to our ARIMA
 model. Technically, when you add an exogenous feature in a formula in the call 
 to `ARIMA()`, this fits a regression model with ARIMA errors.
 
@@ -283,7 +283,7 @@ for (i in 1:length(fc_dates)) {
 ```
 
 14. (Bonus) 
-Compute the coverage of \80% prediction intervals from the ARIMA model with the
+Compute the coverage of 80\% prediction intervals from the ARIMA model with the
 exogenous feature (cases), and plot alongside the coverage curves from models 
 considered thus far.
 
