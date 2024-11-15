@@ -120,9 +120,9 @@ First, you need join the death data to the forecast data. Using `left_join()`,
 join `covidhub_fc` and `cases_deaths` by date: specifically, the `target_date` 
 variable in the first data set should be matched to the `date` variable in the 
 second. As a check, you should see for that the 4 week ahead prediction for the
-target date July 4, 2020, the point forecast is 5169.654 and the death count is
-3684. After you've joined the data sets, compute the MAE of the point forecasts 
-per horizon, report the results. 
+target date July 4, 2020, the point forecast is 5169.654 and the death count 
+is 3684. After joining the data sets, compute the MAE of the point forecasts per 
+horizon, report the results. 
 
 2. (2 pts)
 Using the same joined data set from Q1, compute the coverage of 80\% prediction 
